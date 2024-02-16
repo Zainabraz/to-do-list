@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TD List</title>
+    <link rel="shortcut icon" href="./src/images/favicon.png" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="addSection">
+        <h2>To Do List</h2>
+        <div class="insertBlock">
+          <form class="add">
+            <input
+              type="text"
+              name="task"
+              class="add__field"
+              placeholder="What do you have planned?"
+            />
+            <button class="btn add__btn">
+              <span>Add</span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="listDownSection hidden">
+        <h2>Tasks</h2>
+        <ul class="taskContainer"></ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+body {
+  background-color: #27374d;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: flex-start;
+  flex-direction: row;
+  font-family: Nunito Sans, sans-serif;
+}
+.content {
+  margin-top: 100px;
+}
+.listDownSection {
+  margin-top: 50px;
+}
+.hidden {
+  display: none;
+}
+.listDone p {
+  text-decoration: line-through;
+}
+.listDownSection ul {
+  padding: 0;
+}
+.listDownSection li {
+  list-style-type: none;
+  color: #000000;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+.listDownSection li p {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.listDownSection li img {
+  width: 25px;
+  cursor: pointer;
+}
+.listDownSection li svg {
+  width: 20px;
+}
+.listDownSection .taskContent {
+  display: flex;
+  align-items: center;
+}
+.insertBlock form {
+  background-color: white;
+  padding-left: 20px;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+}
+.insertBlock input {
+  width: 400px;
+  font-size: 20px;
+  background: 0 0;
+  border: none;
+}
+.insertBlock input:focus-visible {
+  outline: none;
+}
+.insertBlock button {
+  background-color: #526d82;
+  color: white;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 20px;
+  border: none;
+}
+h2 {
+  color: #dde6ed;
+}
+@media (max-width: 600px) {
+  .content {
+    width: 90%;
+  }
+  .insertBlock input {
+    font-size: 15px;
+  }
+}
