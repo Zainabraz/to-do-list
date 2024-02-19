@@ -28,7 +28,8 @@ const controlDoneTask = function (id) {
   doneTaskView.render(model.state.list);
 };
 const controlDeleteTask = function (id) {
-  model.deleteTask(model.state.list.id);
+  console.log(id);
+  model.deleteTask(id);
   listView.render(model.state.list);
 };
 
